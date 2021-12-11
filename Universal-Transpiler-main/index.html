@@ -1,0 +1,174 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+     <script src="app.js"></script>  
+        <title>UNIVERSAL TRANSPILER</title>
+        <link rel="shortcut icon" sizes="180x180" href="https://i.ibb.co/H7MjfSq/circle-cropped.png">
+<link rel="shortcut icon" type="image/png" sizes="32x32" href="https://i.ibb.co/H7MjfSq/circle-cropped.png">
+<link rel="shortcut icon" type="image/png" sizes="16x16" href="https://i.ibb.co/H7MjfSq/circle-cropped.png">
+
+        
+        
+                <script language=javascript>
+            function apply()
+    {
+        document.b.clang.disabled=true;
+        document.c.cpp.disabled=true;
+        document.d.java.disabled=true;
+        if(document.a.uploadfile.enabled=true)
+        {
+            document.b.clang.disabled=false;
+            document.c.cpp.disabled=false;
+            document.d.java.disabled=false;
+        }
+        
+
+    }
+                
+
+                                
+                    
+        </script>
+
+        <style>
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap');   
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+            
+  html {
+  height: 100%;
+    
+ }
+   
+ body{
+        background-color: aliceblue;
+            }
+            
+.button1 {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #754CA9;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px #999;
+  width: 90px;
+  height: 50px;
+}
+
+.button1:hover {background-color: #482C76}
+
+.button1:active {
+  background-color: #482C76;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#filedrag {
+  padding: 1em;
+  margin: 1em 0;
+  color: #1a1a1a;
+  border: 2px dashed #808080;
+  border-radius: 4px;
+  cursor: default;
+  width: 50%;
+  height: 30%;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#filedrag.hover {
+  border-color: #efd126;
+  border-style: solid;
+}
+
+#filedrag.hover .box-icon {
+  max-width: 50px;
+}
+
+#fileselect {
+  margin: auto;
+}
+
+.box-icon {
+  max-width: 50px;
+  display: block;
+  margin: auto;
+}
+
+.mobile-upload {
+  display: none;
+}
+
+.btn{
+  background-color: #04B4E0;
+  border-color: darkblue;
+}
+
+
+@media (pointer: coarse) {
+  .desktop-upload {
+    display: none;
+  }
+}
+
+.container {
+    height: 17px;
+    width: 50%; 
+    background-color: #CCC;
+    position: relative;
+    align-content: center;
+    border-radius: 7px;
+            } 
+            
+.jumbotron {
+    background-color: #754CA9;            
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1 style="font-family: 'Amatic SC', cursive; color: aliceblue; font-size: 80px; letter-spacing: 2.5px; text-align: center">ƲղíѵҽɾsɑƖ ƬɾɑղsթíƖҽɾ</h1>
+        </div>
+    
+        <div style= "text-align: center ">
+            <h5 style="font-family: 'PT Sans', cursive; letter-spacing: 1px; font-size: 30px;">Choose the python file you want to convert!</h5>
+<form name="a" method="POST" action="/" enctype="multipart/form-data">
+    <div class="form-group desktop-upload">
+    <div>
+        <div id="filedrag" draggable ="true" ><br>
+          <img class="box-icon" style="width: 45px; height: 45px" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Farm-Fresh_inbox_upload.png" /><br>
+          <label style="text-align-last: inherit" for="fileselect"></label>
+          <input type="file" id="fileselect" name="file"/>
+        </div>
+
+    </div>
+    </div>
+        <div class="form-group mobile-upload">
+      <label for="exampleFormControlFile1">Example file input</label>
+      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+    <button type="submit" class="btn btn-primary" style="font-family: 'Patrick Hand SC', cursive; font-size: 25px; letter-spacing: 1px" name="uploadfile" onclick="apply()" >Upload File</button>
+</form>
+       <h5 style="margin-top: 50px; font-family: 'Amatic SC', cursive; font-size: 50px; letter-spacing: 2.5px; color: midnightblue" >Choose the Language you want to convert into:</h5>     
+<form name="b" style="display: inline-block" action="/foo">
+    <button name="clang" type="submit" disabled class="button1" style="margin: 20px; font-family: 'Pangolin', cursive;" >C</button>
+</form>
+<form name="c" style="display: inline-block" action="/foo1">
+    <button name="cpp" type="submit" disabled class="button1" style="margin: 20px; font-family: 'Pangolin', cursive;">C++</button>
+</form>
+<form name="d" style="display: inline-block" action="/foo2">
+    <button name="java" type="submit" disabled class="button1" style="margin: 20px; font-family: 'Pangolin', cursive;">Java</button>
+</form>
+</div>
+</body>
+</html>          

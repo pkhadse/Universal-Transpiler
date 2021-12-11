@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Universal Transpiler</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+    
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: aliceblue;
+}
+.box {
+  height: 350px;
+  width: 250px;
+  background: #fff;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.box svg {
+  height: 120px;
+  width: 120px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+        
+      
+.box svg circle {
+  fill: transparent;
+  stroke: #27E867;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: animate 8s linear infinite;
+
+}
+@keyframes animate {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.box .stop {
+  height: 110px;
+  width: 110px;
+  background: transparent;
+  border-radius: 50%;
+  border: 10px solid #1CBF52;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.box .progress {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  color: black;
+  font-family: sans-serif;
+}
+.box .counter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: 800;
+  color: black;
+  font-family: sans-serif;
+}
+/*This is my youtube channel link*/
+#yt {
+  position: absolute;
+  bottom: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  right: 20px;
+  color: #fff;
+}
+#yt:hover {
+  color: red;
+}
+
+    </style>
+
+<body>
+
+  <div class="box">
+    <svg>
+      <circle cx="60" cy="60" r="50"></circle>
+    </svg>
+    <div class="counter">0</div>
+    <div class="stop"></div>
+    <div class="progress"></div>
+  </div>
+
+  <script type="text/javascript">
+    var a = 0;
+    var run = setInterval(frames, 50);
+
+    function frames() {
+      a = a + 1;
+      if (a == 101) {
+        clearInterval(run);
+      } else {
+        var counter = document.querySelector(".counter");
+        counter.textContent = a + "%";
+      }
+    }
+    setTimeout(stopPoint, 5000);
+
+    function stopPoint() {
+      var stop = document.querySelector(".stop");
+      stop.style.display = "block";
+      
+    }
+    setTimeout(function(){
+      window.location.href = 'http://127.0.0.1:5000/download2';
+   }, 5000);
+  </script>
+
+
+
+</body>
+
+</html>
